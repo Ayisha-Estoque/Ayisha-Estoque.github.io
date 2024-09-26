@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayisha's Code Vault</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            background: linear-gradient(to bottom, #1A1A2E, #3E3E54, #B0C4DE); /* Gradient background */
+            color: #EAEAEA;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            overflow: hidden;
+        }
+        
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/stardust.png');
+            opacity: 0.7;
+            background-size: cover;
+            z-index: 1; /* Make sure this is behind the text */
+        }
+
+        .header, .main-content, .footer {
+            position: relative;
+            z-index: 2; /* Ensure content stays above the starry effect */
+        }
+        /* Psition of THE VAULT */
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: calc(100% - 40px);
+        }
+        .vault-title {
+            font-size: 2em;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background: #FF6F61;
+        }
+        .main-content {
+            text-align: center;
+        }
+        /* Animation */
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 4em;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 35px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            animation: slideDown 2s ease-out; /* Apply the animation */
+        }
+        .button {
+            background: #FF6F61;
+            border: none;
+            border-radius: 50px; /* Rounded buttons */
+            color: #EAEAEA;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            transition: background 0.3s, transform 0.3s;
+            margin: 10px;
+        }
+        .button:hover {
+            background: #EAEAEA;
+            color: #1A1A2E;
+            transform: translateY(-10px);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="vault-title">THE VAULT</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to Ayisha's Code Vault</h1>
+        <a href="project1.html">
+            <button class="button btn">Project 1</button>
+        </a>
+            <button class="button btn">Project 2</button>
+            <button class="button btn">Project 3</button>
+            <button class="button btn">Project 4</button>
+            <button class="button btn">Project 5</button>
+        </div>
+        <div class="footer">
+            &copy; 2024 Ayisha. All Rights Reserved.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
