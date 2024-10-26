@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DigiTome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url('pics/bg3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #FF9638;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .theVault {
+            color: #F4F7FA;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .headerImg {
+            width: 450px;
+            margin-bottom: 0px;
+        }
+
+        .card {
+            width: 450px;
+            background-color: #FEE875;
+            margin: 10px auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cardHomeImg {
+            width: 100%;
+            border-radius: 30px;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -20px;
+        }
+
+        .cardBody {
+            text-align: center;
+        }
+
+        .cardTitle {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Poppins';
+            font-weight: bold;
+            margin-top: -10px;
+
+        }
+
+        .btnHome {
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-color: black;
+            background-color: #8E433D;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            width: 150px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="theVault" href="../index.html">THE VAULT</a>
+        </div>
+    </nav>
+    <div class="container">
+        <img src="pics/header.png" class="headerImg" alt="Header Image">
+        <div class="col">
+            <div class="card">
+                <img src="pics/digi1.gif" class="cardHomeImg" alt="...">
+                <div class="cardBody">
+                    <div class="cardTitle">Digimon </div>
+                    <a href="search.html" class="btnHome">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
