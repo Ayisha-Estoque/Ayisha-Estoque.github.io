@@ -85,13 +85,21 @@
         }
 
         .headerImage {
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             position: absolute;
             top: -60px;
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            .headerImage {
+                max-width: 200px;
+                top: -30px;
+            }
         }
     </style>
 </head>

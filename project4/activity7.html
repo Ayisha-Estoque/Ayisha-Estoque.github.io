@@ -35,14 +35,15 @@
         }
 
         .headerImg {
-            width: 450px;
-            margin-bottom: 0px;
+            width: 450px; /* Fixed size for larger screens */
+            margin: 0 auto; /* Center image horizontally */
+            display: block; /* Treats the image as a block element */
         }
 
         .card {
-            width: 450px;
+            width: 450px; /* Fixed size for larger screens */
             background-color: #FEE875;
-            margin: 10px auto;
+            margin: 10px auto; /* Center card horizontally */
             border-radius: 20px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
@@ -57,7 +58,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center; /* Center vertically */
             margin-top: -20px;
+            text-align: center; /* Center text */
         }
 
         .cardBody {
@@ -65,12 +68,10 @@
         }
 
         .cardTitle {
-            text-align: center;
             font-size: 30px;
             font-family: 'Poppins';
             font-weight: bold;
             margin-top: -10px;
-
         }
 
         .btnHome {
@@ -82,8 +83,23 @@
             color: white;
             padding: 5px 10px;
             text-decoration: none;
-            width: 150px;
-            font-size: 15px;
+            width: 150px; /* Fixed size for larger screens */
+            font-size: 15px; /* Fixed size for larger screens */
+        }
+
+        @media (max-width: 768px) {
+            .headerImg {
+                width: 70%; /* Responsive width for smaller screens */
+                max-width: 300px; /* Maximum width for smaller screens */
+            }
+
+            .card {
+                width: 90%; /* Make the card responsive */
+            }
+
+            .cardTitle {
+                font-size: 24px; /* Smaller font for mobile */
+            }
         }
     </style>
 </head>
@@ -94,17 +110,13 @@
             <a class="theVault" href="../index.html">THE VAULT</a>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-6 col-sm-2 text-center">
-                <img src="pics/header.png" class="headerImg" alt="Header Image">
-                <div class="card">
-                    <img src="pics/digi1.gif" class="cardHomeImg" alt="...">
-                    <div class="cardBody">
-                        <div class="cardTitle">Digimon </div>
-                        <a href="search.html" class="btnHome">GET STARTED</a>
-                    </div>
-                </div>
+    <div class="container"> <!-- Removed text-center class here -->
+        <img src="pics/header.png" class="headerImg" alt="Header Image">
+        <div class="card">
+            <img src="pics/digi1.gif" class="cardHomeImg" alt="...">
+            <div class="cardBody">
+                <div class="cardTitle">Digimon</div>
+                <a href="search.html" class="btnHome">GET STARTED</a>
             </div>
         </div>
     </div>
