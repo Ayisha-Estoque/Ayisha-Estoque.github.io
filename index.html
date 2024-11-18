@@ -1,135 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayisha's Code Vault</title>
-    
-    <!-- Bootstrap CSS -->
+    <title>Ayisha's Portfolio</title>
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="image\officialIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+
     <style>
         body {
-            position: relative;
-            background: linear-gradient(to bottom, #1A1A2E, #3E3E54, #B0C4DE); /* Gradient background */
-            color: #EAEAEA;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
-            overflow: hidden;
-        }
-        
-        
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('img/stardust.png');
-            opacity: 0.7;
-            background-size: cover;
-            z-index: 1; /* Make sure this is behind the text */
+            background-color: #F9DFB8;
         }
 
-        .header, .main-content, .footer {
-            position: relative;
-            z-index: 2; /* Ensure content stays above the starry effect */
-        }
-        /* Psition of THE VAULT */
-        .header {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: calc(100% - 40px);
-        }
-        .vault-title {
-            font-size: 2em;
-            font-family: 'Roboto', sans-serif;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-        .line {
+        .navbar {
+            background-color: #C18D56;
             width: 100%;
-            height: 2px;
-            background: #FF6F61;
+            top: 0;
         }
-        .main-content {
+
+        .navbarHeader {
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            font-family: 'Inknut Antiqua';
+        }
+
+        .navbarIcon {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            margin-left: -20px;
+        }
+
+        .introSection {
+            margin-top: 40px;
+        }
+
+        .profilePic {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .introText h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #1A1A2E;
+            font-family: 'Inknut Antiqua';
+            margin-top: 50px;
+        }
+
+        .introText p {
+            font-size: 1.5em;
+            color: #333333;
+            line-height: 1.7;
+            text-align: justify;
+            font-family: 'Instrument Serif';
+            margin-bottom: 60px;
+        }
+
+        .projectsSection {
             text-align: center;
+            margin-top: 10px;
         }
-        /* Animation */
-        @keyframes slideDown {
-            0% {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
+
+        .projectsSection h2 {
+            font-size: 2em;
+            color: #1A1A2E;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: -40px;
+            font-family: 'Inknut Antiqua';
         }
-        h1 {
-            font-size: 4em;
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 35px;
-            margin-left: 5px;
-            margin-right: 5px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            animation: slideDown 2s ease-out; /* Apply the animation */
-        }
-        .button {
-            background: #FF6F61;
+
+        .projectButton {
+            background: #593A2D;
             border: none;
-            border-radius: 50px; /* Rounded buttons */
-            color: #EAEAEA;
+            border-radius: 50px;
+            color: #F9DFB8;
             padding: 15px 30px;
             font-size: 1.2em;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Instrument Serif';
             transition: background 0.3s, transform 0.3s;
             margin: 10px;
         }
-        .button:hover {
-            background: #EAEAEA;
+
+        .projectButton:hover {
+            background-color: #C18D56;
             color: #1A1A2E;
-            transform: translateY(-10px);
         }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .otherProjectsSection {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .otherProjectsSection h2 {
+            font-size: 2em;
+            color: #1A1A2E;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: -40px;
+            font-family: 'Inknut Antiqua';
+        }
+
         .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+            color: #1A1A2E;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
-    <div class="header">
-        <div class="vault-title">THE VAULT</div>
-        <div class="line"></div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <span class="navbarHeader">
+                <img src="image/officialIcon.png" alt="Icon" class="navbarIcon">
+                Ayisha
+            </span>
+        </div>
+    </nav>
+
+    <div class="container introSection">
+        <div class="row">
+            <div class="col-12 col-md-6 col-sm-12 text-center">
+                <img src="image/pfp.png" alt="Ayisha" class="profilePic">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 introText">
+                <h1>Hi! <br> I'm Ayisha</h1>
+                <p class="text-justify">
+                    You can call me Ayi, and I'm from Calamba, Laguna. I'm currently a college student at the
+                    Polytechnic University of the Philippines, where I'm pursuing a Bachelor of Science in Information
+                    Technology. This page showcases the projects that I've created in Web Development. Welcome to my
+                    portfolio and enjoy!
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="main-content">
-        <h1>Welcome to Ayisha's Code Vault</h1>
-        <a href="project1.html">
-            <button class="button btn">Project 1</button>
-        </a>
-        <a href="project2/activity5.html">
-            <button class="button btn">Project 2</button>
-        </a>
-        <a href="project3/activity6.html">
-            <button class="button btn">Project 3 </button>
-        </a>
-        <a href="project4/activity7.html">
-            <button class="button btn">Project 4 </button>
-        </a>
-            <button class="button btn">Project 5</button>
-        </div>
-        <div class="footer">
-            &copy; 2024 Ayisha | All Rights Reserved.
+    <!-- Projects Section -->
+    <div class="container projectsSection">
+        <h2>My Projects</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-4">
+                <a href="project1/activity4.html">
+                    <button class="projectButton btn-block">Project 1</button>
+                </a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="project2/activity5.html">
+                    <button class="projectButton btn-block">Project 2</button>
+                </a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="project3/activity6.html">
+                    <button class="projectButton btn-block">Project 3</button>
+                </a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="project4/activity7.html">
+                    <button class="projectButton btn-block">Project 4</button>
+                </a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="project5/banner.html">
+                    <button class="projectButton btn-block">Project 5</button>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
+    <div class="container otherProjectsSection">
+        <h2>Other Projects</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-4">
+                <a href="video/wickedTrailer.html">
+                    <button class="projectButton btn-block">Trailer</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Ayisha | All Rights Reserved
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
+
 </html>

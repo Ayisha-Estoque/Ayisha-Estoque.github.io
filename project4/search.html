@@ -7,7 +7,8 @@
     <title>DigiTome</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="icon" href="pics/officialIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <style>
         body {
             background-image: url('pics/searchbg.png');
@@ -15,16 +16,28 @@
             background-repeat: no-repeat;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
 
         .navbar {
             background-color: #FF9638;
+            width: 100%;
+            position: absolute;
+            top: 0;
         }
 
-        .theVault {
-            color: #F4F7FA;
-            font-size: 30px;
-            text-decoration: none;
+        .navbarHeader {
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            font-family: 'Inknut Antiqua';
+        }
+
+        .navbarIcon {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
         }
 
         .card {
@@ -79,45 +92,20 @@
             font-weight: bolder;
         }
 
-        .headerContainer {
-            position: relative;
-            z-index: 1;
-        }
-
-        .headerImage {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            position: absolute;
-            top: -60px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-        }
-
-        @media (max-width: 768px) {
-            .headerImage {
-                max-width: 200px;
-                top: -30px;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
         <div class="container-fluid">
-            <a class="theVault" href="activity7.html">THE VAULT</a>
+            <span class="navbarHeader">
+                <a href="activity7.html">
+                    <img src="pics/officialIcon.png" alt="Icon" class="navbarIcon">
+                </a>
+                Ayisha
+            </span>
         </div>
     </nav>
-
-    <div class="headerContainer">
-        <div class="row">
-            <div class="col-sm-4 col-md-6 col-12">
-                <img src="pics/header.png" alt="Header Image" class="headerImage">
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="searchContainer">

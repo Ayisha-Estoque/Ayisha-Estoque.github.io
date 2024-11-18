@@ -1,0 +1,72 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 2000px
+}
+
+.yellowBackground {
+	background-color: #FBFC93;
+	padding: 30px;
+	height: 100%;
+}
+
+
+.movie h1 {
+	text-align: center;
+	justify-content: center;
+	font-size: 60px;
+	font-family: 'Instrument Serif';
+	margin-top: 20px;
+}
+
+.card {
+	border-radius: 30px;
+}
+
+.cardBody {
+	text-align: justify;
+	justify-content: center;
+	margin: 20px;
+	font-family: 'Poppins';
+	font-size: 17px;
+}
+
+.movieTrailer {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.video {
+	margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+	.movie h1 {
+		font-size: 1.8rem;
+	}
+
+	.cardBody {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 576px) {
+	.movie h1 {
+		font-size: 1.5rem;
+	}
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	color: #1A1A2E;
+}
