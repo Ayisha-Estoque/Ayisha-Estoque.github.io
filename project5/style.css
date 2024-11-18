@@ -2,12 +2,12 @@
 
 /*!This style is important, do not override!*/
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	height: 2000px
+    height: auto;
 }
 
 .yellowBackground {
