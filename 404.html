@@ -7,14 +7,15 @@
     <title>Ayisha's Portfolio</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/officialIcon.png">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/officialIcon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: #F9DFB8; 
+            background-color: #F9DFB8;
             flex-direction: column;
         }
 
@@ -43,7 +44,6 @@
             justify-content: center;
             font-family: 'Moul';
             font-weight: 900;
-            margin-top: 10%;
         }
 
         .description h1 {
@@ -52,15 +52,20 @@
             font-family: 'Poppins';
         }
 
-        /* .picture {
+        .picture {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: flex;
             justify-content: center;
+            margin-bottom: 0;
         }
 
         .mainPicture {
             max-width: 100%;
-            height: 405px;
-        } */
+            height: auto;
+        }
 
         .button404 {
             background: #593A2D;
@@ -72,6 +77,8 @@
             font-family: 'Instrument Serif';
             transition: background 0.3s, transform 0.3s;
             margin: 20px 0;
+            position: relative;
+            z-index: 10;
         }
 
         .button404:hover {
@@ -83,35 +90,38 @@
         @media (max-width: 576px) {
             .title h1 {
                 font-size: 90px;
-                margin-top: 50%;
+                margin-top: 50px;
             }
 
             .description h1 {
                 font-size: 16px;
                 padding: 0px 10px;
             }
-/* 
+
             .mainPicture {
                 height: 200px;
                 margin-top: 90px;
-            } */
+            }
 
             .button404 {
                 padding: 10px 20px;
                 font-size: 1em;
             }
+
+            .picture {
+                margin-bottom: 10px;
+            }
         }
     </style>
 
-
-    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container-fluid">
             <span class="navbarHeader">
-                <img src="image/officialIcon.png" alt="Icon" class="navbarIcon">
+                <img src="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/officialIcon.png"
+                    alt="Icon" class="navbarIcon">
                 Ayisha
             </span>
         </div>
@@ -137,14 +147,16 @@
             </div>
         </div>
     </div>
-<!-- 
+
     <div class="container-fluid">
         <div class="row">
             <div class="picture col-12">
-                <img class="mainPicture" src="image/cat.png" alt="...">
+                <img class="mainPicture"
+                    src="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/cat.png"
+                    alt="...">
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
