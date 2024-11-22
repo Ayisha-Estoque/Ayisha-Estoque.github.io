@@ -16,13 +16,16 @@
     <style>
         body {
             background-color: #F9DFB8;
+            display: flex;
             flex-direction: column;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
         }
-
+    
         .navbar {
             background-color: #C18D56;
         }
-
+    
         .navbarHeader {
             color: white;
             font-size: 24px;
@@ -30,44 +33,35 @@
             align-items: center;
             font-family: 'Inknut Antiqua';
         }
-
+    
         .navbarIcon {
             width: 30px;
             height: 30px;
             margin-right: 8px;
         }
-
+    
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
         .title h1 {
             color: black;
             font-size: 200px;
-            text-align: center;
-            justify-content: center;
             font-family: 'Moul';
             font-weight: 900;
+            margin: 0;
         }
-
+    
         .description h1 {
-            text-align: center;
-            justify-content: center;
             font-family: 'Poppins';
+            margin: 20px 0;
         }
-
-        .picture {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .mainPicture {
-            max-width: 100%;
-            height: auto;
-        }
-
+    
         .button404 {
             background: #593A2D;
             border: none;
@@ -77,89 +71,58 @@
             font-size: 1.2em;
             font-family: 'Instrument Serif';
             transition: background 0.3s, transform 0.3s;
-            margin: 20px 0;
-            position: relative;
-            z-index: 10;
         }
-
+    
         .button404:hover {
             background-color: #C18D56;
             color: #1A1A2E;
         }
-
+    
         /* Media query for small screens */
         @media (max-width: 576px) {
             .title h1 {
                 font-size: 90px;
-                margin-top: 50px;
             }
-
+    
             .description h1 {
                 font-size: 16px;
                 padding: 0px 10px;
             }
-
-            .mainPicture {
-                height: 200px;
-                margin-top: 90px;
-                margin-bottom: -10px;
-            }
-
+    
             .button404 {
                 padding: 10px 20px;
                 font-size: 1em;
             }
         }
     </style>
-
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <span class="navbarHeader">
-                <img src="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/officialIcon.png"
-                    alt="Icon" class="navbarIcon">
-                Ayisha
-            </span>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="title col-12">
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <span class="navbarHeader">
+                    <img src="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/officialIcon.png"
+                        alt="Icon" class="navbarIcon">
+                    Ayisha
+                </span>
+            </div>
+        </nav>
+    
+        <div class="content">
+            <div class="title">
                 <h1>OOPS!</h1>
             </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="description col-12">
+            <div class="description">
                 <h1>404 - The page you're trying to reach doesn’t exist</h1>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center">
+            <div>
                 <button class="button404" onclick="location.href='index.html'">Go Back to Homepage</button>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="picture col-12">
-                <img class="mainPicture"
-                    src="https://raw.githubusercontent.com/Ayisha-Estoque/Ayisha-Estoque.github.io/main/image/cat.png"
-                    alt="...">
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
-
-</html>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+    
