@@ -153,43 +153,56 @@
 
     <!-- Projects Section -->
     <div class="container projectsSection">
-        <h2>My Projects</h2>
+        <h2>My Portfolio</h2>
         <div class="row justify-content-center">
             <div class="col-md-2 col-4">
-                <a href="project1/activity4.html">
-                    <button class="projectButton btn-block">Project 1</button>
-                </a>
+                <button class="projectButton btn-block" id="webdevBtn">WEBDEV</button>
             </div>
             <div class="col-md-2 col-4">
-                <a href="project2/activity5.html">
-                    <button class="projectButton btn-block">Project 2</button>
-                </a>
-            </div>
-            <div class="col-md-2 col-4">
-                <a href="project3/activity6.html">
-                    <button class="projectButton btn-block">Project 3</button>
-                </a>
-            </div>
-            <div class="col-md-2 col-4">
-                <a href="project4/activity7.html">
-                    <button class="projectButton btn-block">Project 4</button>
-                </a>
-            </div>
-            <div class="col-md-2 col-4">
-                <a href="project5/banner.html">
-                    <button class="projectButton btn-block">Project 5</button>
-                </a>
+                <button class="projectButton btn-block" id="appdevBtn">APPDEV</button>
             </div>
         </div>
-    </div>
-
-    <div class="container otherProjectsSection">
-        <h2>Other Projects</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-2 col-4">
-                <a href="video/wickedTrailer.html">
-                    <button class="projectButton btn-block">Trailer</button>
-                </a>
+        <div id="webdevProjects" style="display: none;">
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/project1/activity4.html">
+                        <button class="projectButton btn-block">Project 1</button>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/project2/activity5.html">
+                        <button class="projectButton btn-block">Project 2</button>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/project3/activity6.html">
+                        <button class="projectButton btn-block">Project 3</button>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/project4/activity7.html">
+                        <button class="projectButton btn-block">Project 4</button>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/project5/banner.html">
+                        <button class="projectButton btn-block">Project 5</button>
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="WEBDEV/video/wickedTrailer.html">
+                        <button class="projectButton btn-block">Trailer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="appdevProjects" style="display: none;">
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-2 col-4">
+                    <a href="appdev/project1.html">
+                        <button class="projectButton btn-block">Project 1</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -202,6 +215,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        document.getElementById("webdevBtn").addEventListener("click", function () {
+            let webProjects = document.getElementById("webdevProjects");
+            let appProjects = document.getElementById("appdevProjects");
+            webProjects.style.display = (webProjects.style.display === "none" || webProjects.style.display === "") ? "block" : "none";
+            appProjects.style.display = "none";
+        });
+        document.getElementById("appdevBtn").addEventListener("click", function () {
+            let appProjects = document.getElementById("appdevProjects");
+            let webProjects = document.getElementById("webdevProjects");
+            appProjects.style.display = (appProjects.style.display === "none" || appProjects.style.display === "") ? "block" : "none";
+            webProjects.style.display = "none";
+        });
+    </script>
+
+
 </body>
 
 </html>
