@@ -1,0 +1,148 @@
+body {
+    background: url('../shared/posters/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.searchButton {
+    background-color: #FF90B3;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .search {
+        width: 150px;
+        padding: 8px 15px;
+    }
+
+    .searchButton {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+.categoryCard {
+    background-color: #FF90B3;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.section {
+    margin: 10px;
+    font-family: Poppins;
+}
+
+.categoryButton {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+}
+
+.categoryTitle {
+    flex-grow: 1;
+    border-radius: 15px;
+    font-family: Poppins;
+    background-color: #FFAFCC;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.categoryTitle:hover {
+    background-color: #A2D2FF;
+    color: white;
+}
+
+.contentCard {
+    background-color: #FF90B3;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoryLabel {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.disneyCard {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.imagePoster img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.disneyCard .imagePoster {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.disneyCard .imagePoster img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.disneyCard .movieTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.disneyCard .imagePoster:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.10);
+}
+
+.disneyCard .imagePoster:hover .movieTitle {
+    opacity: 1;
+    visibility: visible;
+}
