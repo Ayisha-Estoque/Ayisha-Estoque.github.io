@@ -7,56 +7,56 @@ var products = [
                 "name": "Trevi Fountain",
                 "code": "Trevi",
                 "price": 895,
-                "image": "image/architecture/trevi.webp"
+                "image": "image/Architecture/trevi.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Notre-Dame de Paris",
                 "code": "Notre",
                 "price": 12880,
-                "image": "image/architecture/notre.webp"
+                "image": "image/Architecture/notre.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Himeji Castle",
                 "code": "Himeji",
                 "price": 8960,
-                "image": "image/architecture/himeji.webp"
+                "image": "image/Architecture/himeji.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Great Pyramid of Giza",
                 "code": "Great",
                 "price": 7280,
-                "image": "image/architecture/great.webp"
+                "image": "image/Architecture/great.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Statue of Liberty",
                 "code": "Statue",
                 "price": 6720,
-                "image": "image/architecture/statue.webp"
+                "image": "image/Architecture/statue.webp"
             },
             {
                 "isAvailable": true,
                 "name": "London",
                 "code": "London",
                 "price": 2240,
-                "image": "image/architecture/london.webp"
+                "image": "image/Architecture/london.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Paris",
                 "code": "Paris",
                 "price": 2800,
-                "image": "image/architecture/paris.webp"
+                "image": "image/Architecture/paris.webp"
             },
             {
                 "isAvailable": true,
                 "name": "New York City",
                 "code": "NYC",
                 "price": 3360,
-                "image": "image/architecture/new.webp"
+                "image": "image/Architecture/new.webp"
             }
         ]
     },
@@ -68,70 +68,70 @@ var products = [
                 "name": "Petite Sunny Bouquet",
                 "code": "Petite",
                 "price": 1680,
-                "image": "image/botanical collection/petite.webp"
+                "image": "image/Botanical Collection/petite.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Japanese Red Maple Bonsai Tree",
                 "code": "Japanese",
                 "price": 3360,
-                "image": "image/botanical collection/japanese.webp"
+                "image": "image/Botanical Collection/japanese.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Flower Arrangement",
                 "code": "Flower",
                 "price": 6160,
-                "image": "image/botanical collection/flower.webp"
+                "image": "image/Botanical Collection/flower.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Pretty Pink Flower Bouquet",
                 "code": "Pretty",
                 "price": 3360,
-                "image": "image/botanical collection/pretty.webp"
+                "image": "image/Botanical Collection/pretty.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Mini Orchid",
                 "code": "Mini",
                 "price": 1680,
-                "image": "image/botanical collection/mini.webp"
+                "image": "image/Botanical Collection/mini.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Lucky Bamboo",
                 "code": "Lucky",
                 "price": 1680,
-                "image": "image/botanical collection/lucky.webp"
+                "image": "image/Botanical Collection/lucky.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Pulm Blossom",
                 "code": "Pulm",
                 "price": 1680,
-                "image": "image/botanical collection/pulm.webp"
+                "image": "image/Botanical Collection/pulm.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Orchid",
                 "code": "Orchid",
                 "price": 2800,
-                "image": "image/botanical collection/orchid.webp"
+                "image": "image/Botanical Collection/orchid.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Chrysanthemum",
                 "code": "Chry",
                 "price": 1680,
-                "image": "image/botanical collection/chry.webp"
+                "image": "image/Botanical Collection/chry.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Bonsai Tree",
                 "code": "Bonsai",
                 "price": 2800,
-                "image": "image/botanical collection/bonsai.webp"
+                "image": "image/Botanical Collection/bonsai.webp"
             }
         ]
     },
@@ -143,35 +143,35 @@ var products = [
                 "name": "Bluey's Family House",
                 "code": "Family",
                 "price": 3920,
-                "image": "image/bluey/family.webp"
+                "image": "image/Bluey/family.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Playground Fun with Bluey and Chloe",
                 "code": "Playground",
                 "price": 1120,
-                "image": "image/bluey/playground.webp"
+                "image": "image/Bluey/playground.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Bluey's Beach and Family Car Trip",
                 "code": "Beach",
                 "price": 1680,
-                "image": "image/bluey/beach.webp"
+                "image": "image/Bluey/beach.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Ice Cream Trip with Bluey ",
                 "code": "Ice Cream",
                 "price": 1680,
-                "image": "image/bluey/ice.webp"
+                "image": "image/Bluey/ice.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Bluey's Family House with Memory Game",
                 "code": "Memory",
                 "price": 3920,
-                "image": "image/bluey/memory.webp"
+                "image": "image/Bluey/memory.webp"
             }
         ]
     },
@@ -183,28 +183,28 @@ var products = [
                 "name": "Welcome to Emerald City",
                 "code": "Emerald",
                 "price": 5600,
-                "image": "image/wicked/emerald.webp"
+                "image": "image/Wicked/emerald.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Elphaba & Glinda Figures",
                 "code": "Figures",
                 "price": 3080,
-                "image": "image/wicked/figures.webp"
+                "image": "image/Wicked/figures.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Glinda & Elphaba's Dormitory",
                 "code": "Dormitory",
                 "price": 3920,
-                "image": "image/wicked/dormitory.webp"
+                "image": "image/Wicked/dormitory.webp"
             },
             {
                 "isAvailable": true,
                 "name": "Glinda,Elphaba & Nessarose at Shiz University",
                 "code": "DShiz",
                 "price": 1680,
-                "image": "image/wicked/shiz.webp"
+                "image": "image/Wicked/shiz.webp"
             }
         ]
     },
