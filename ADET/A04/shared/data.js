@@ -360,19 +360,19 @@ var products = [
     },
 ];
 
-
 var total = 0;
 
 function loadCategories() {
     var categoriesContainer = document.getElementById("categories");
     products.forEach((product, index) => {
         categoriesContainer.innerHTML += `
-<div onclick="loadProducts('${index}')" class="card mx-1 category-button p-3 text-center">
-  <small>${product.category}</small>
+<div onclick="loadProducts('`+ index + `')" class="card mx-1 category-button p-3 text-center">
+  <small>`+ product.category + `</small>
 </div>
 `;
     });
 }
+
 
 function loadProducts(categoryIndex) {
     var maincontainer = document.getElementById("maincontainer");
@@ -382,33 +382,38 @@ function loadProducts(categoryIndex) {
         if (content.sizes) {
             content.sizes.forEach(size => {
                 maincontainer.innerHTML += `
-                <div onclick="addToReceipt('${size.price}','${content.code + size.code}')" class="card mx-1 my-2 product-button p-3 text-center">
-                    <img src="${content.image}" alt="${content.name}" class="product-img mb-2">
-                    <small>${content.name} ${size.code}</small>
-                </div>
+                  <div onclick="addToReceipt('`+ size.price + `','` + content.code + size.code + `')" class="card mx-1 my-2 custom-button content p-3 text-center">
+                    <img src="` + content.image + `" alt="` + content.name + `" class="product-img mb-2">
+                    <small>`+ content.name + ' ' + size.code + `</small>
+                  </div>
                 `;
             });
         } else {
             maincontainer.innerHTML += `
-            <div onclick="addToReceipt('${content.price}','${content.code}')" class="card mx-1 my-2 product-button p-3 text-center">
-                <img src="${content.image}" class="product-img mb-2">
-                <small>${content.name}</small>
-            </div>
+              <div onclick="addToReceipt('`+ content.price + `','` + content.code + `')" class="card mx-1 my-2 custom-button content p-3 text-center">
+                <img src="` + content.image + `" alt="` + content.name + `" class="product-img mb-2">
+                <small>`+ content.name + `</small>
+              </div>
             `;
         }
     });
 }
 
+
+
 function addToReceipt(price, code) {
     var receiptContainer = document.getElementById("receipt");
     total = parseFloat(total) + parseFloat(price);
-    document.getElementById("totalValue").innerText = total;
+
+    totalValueElement = document.getElementById("totalValue");
+    totalValueElement.innerHTML = total;
+
     receiptContainer.innerHTML += `
-<div class="d-flex flex-row justify-content-between">
-<div><small>${code}</small></div>
-<div><small>${price}</small></div>
-</div>
-`;
+        <div class="d-flex flex-row justify-content-between">
+          <div><small>`+ code + `</small></div>
+          <div><small>`+ price + `</small></div>
+        </div>
+      `;
 }
 
 loadCategories();
